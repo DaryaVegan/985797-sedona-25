@@ -11,11 +11,11 @@
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
-        <li><a href="/inner.html">Гостиницы</a></li>
+        <li><a href="./inner.html">Гостиницы</a></li>
       </ul>
     </nav>
     <span>
-     <a class="main-header-logo" href="/index.html">
+     <a class="main-header-logo" href="./index.html">
       <img src="img/logo-sedona.svg" alt="Логотип «Седона»">
      </a>
    </span>
@@ -23,7 +23,7 @@
 
   <main class="container">
     <h1 class="visually-hidden">Поиск жилья «Седона»</h1>
-    <a class="main-container-logo" href="#">
+    <a class="main-container-logo" href="./index.html">
      <img src="img/intro-welcome.svg" alt="Логотип «Седона»">
     </a>
     <p><b>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</b></p>
@@ -33,7 +33,31 @@
      <h2>Заинтересовались?</h2>
      <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
      <button>Поиск гостиницы в Седоне</button>
-     <!-- Здесь будет форма -->
+     <form class="hotels-search-form" action="#" method="post">
+       <p class="hotels-form-item">
+         <label for="form-date-entry">Дата заезда</label>
+         <input id="form-date-entry" type="text" name="date" value="" placeholder="24 апреля 2017">
+       </p>
+       <!--календарь-->
+       <p class="hotels-form-item">
+         <label for="form-date-departure">Дата выезда</label>
+         <input id="form-date-departure" type="text" name="date" value="" placeholder="4 июля 2017">
+       </p>
+       <!--календарь-->
+       <p>Взрослые</p>
+        <span>
+         <button class="minus">-</button>
+         <input type="text" value="1" size="10">
+         <button class="plus">+</button>
+       </span>
+       <p>Дети</p>
+        <span>
+         <button class="minus">-</button>
+         <input type="text" value="0" size="10">
+         <button class="plus">+</button>
+       </span>
+       <button class="button" type="submit">Найти</button>
+     </form>
     </section>
    </main>
 
@@ -44,9 +68,9 @@
 
     <div class="footer-social">
      <ul>
-      <li><a class="social-button" href="#">Твиттер</a></li>
-      <li><a class="social-button" href="#">Фейсбук</a></li>
-      <li><a class="social-button" href="#">Ютуб</a></li>
+      <li><a class="social-button" href="#" aria-label="Твиттер"></a></li>
+      <li><a class="social-button" href="#" aria-label="Фейсбук"></a></li>
+      <li><a class="social-button" href="#" aria-label="Ютуб"></a></li>
      </ul>
     </div>
 
