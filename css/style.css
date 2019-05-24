@@ -151,6 +151,10 @@ img {
   display: none;
 }
 
+.catalog {
+  background-color: #ffffff;
+}
+
 .catalog-list {
   list-style: none;
 }
