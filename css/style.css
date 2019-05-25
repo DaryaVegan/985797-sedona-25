@@ -20,8 +20,6 @@ a {
 }
 
 .button {
-  font: inherit;
-
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
@@ -33,6 +31,7 @@ a {
 
 .button:hover {
   background-color: #669ec0;
+  cursor:pointer;
 }
 
 .button:focus,
@@ -55,6 +54,7 @@ a {
 .button-search-form:hover,
 .button-reservation:hover {
   background-color: #604e43;
+  cursor:pointer;
 }
 
 .button-search-form:focus,
@@ -89,6 +89,7 @@ img {
 
 .site-navigation a:hover {
   color: #a8c9df;
+  cursor:pointer;
 }
 
 .site-navigation a:focus {
@@ -169,6 +170,7 @@ img {
 
 .hotel-item a:hover {
   color: #81b3d2;
+  cursor:pointer;
 }
 
 .hotel-item a:focus,
@@ -193,6 +195,7 @@ img {
 
 .social-button-item:hover{
   background-color: #669ec0;
+  cursor:pointer;
 }
 
 .social-button-item:focus,
