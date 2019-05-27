@@ -1,5 +1,5 @@
 body {
-  margin: 0 40px;
+  margin: 0 0;
   padding: 0;
 
   font-family: "PT Sans", Arial, sans-serif;
@@ -10,8 +10,9 @@ body {
   text-transform: uppercase;
 
   background-color: #f2f2f2;
-  background-image: url("img/background-photo.jpg");
+  background-image: url("../img/background-photo.jpg");
   background-position: top center;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -64,10 +65,6 @@ a {
   background-color: #503e33;
 }
 
-img {
-  text-align: center;
-}
-
 .main-navigation {
   margin: -16px 0px;
 
@@ -100,11 +97,11 @@ img {
   color: #766357;
 }
 
-.site-navigation-left {
+.site-navigation-left{
   text-align: left;
 }
 
-.site-navigation-right  {
+.site-navigation-right{
   text-align: right;
 }
 
@@ -201,4 +198,88 @@ img {
 .social-button-item:focus,
 .social-button-item:active,{
   background-color: #609dc2;
+}
+
+/* ----- Сеточные стили ----- */
+
+.main-header {
+  margin-bottom: 85px;
+}
+
+.main-navigation {
+  margin-bottom: 85px;
+  min-height: 55px;
+  width: 100%;
+}
+
+.site-navigation {
+  padding: 0px 50px;
+  height: 54px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-intro{
+  display: block;
+  margin: 0 auto;
+}
+.img.img-logo {
+  width: 166px;
+  height: 60px;
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 117px;
+  margin-bottom: 50px;
+}
+
+.features-list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+}
+
+.footer-hashtag {
+  margin: 0;
+  min-height: 25px;
+  min-width: 120px;
+}
+
+.footer-social {
+  margin: 0;
+  min-height: 55px;
+  min-width: 155px;
+}
+
+.footer-copyright {
+  margin: 0;
+  min-height: 50px;
+  min-width: 200px;
+}
+
+.catalog {
+  display: flex;
+  flex-direction: column;
 }
