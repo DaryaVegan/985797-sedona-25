@@ -9,7 +9,7 @@ body {
   color: #000000;
   text-transform: uppercase;
 
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 a {
@@ -229,11 +229,10 @@ img.main-intro {
 }
 
 .site-navigation {
-  padding: 0px 50px;
-  height: 54px;
+  min-height: 55px;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -242,7 +241,8 @@ img.main-intro {
   margin: 0 auto;
 }
 .img.img-logo {
-  width: 166px;
+  display: block;
+  width: 165px;
   height: 65px;
 }
 
@@ -255,13 +255,55 @@ img.main-intro {
   margin-bottom: 50px;
 }
 
-.features-list {
+.wrapper2{
   margin: 0;
   padding: 0;
   width: 100%;
+}
+
+.features-list {
+  margin: 0;
+  padding: 0;
+  width: auto;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  flex-direction: column;
+}
+
+.feature-item {
+  margin: auto;
+  min-height: 300px;
+  list-style: none;
+  background-color: #eeeeee;
+  flex-grow: 1;
+}
+
+.feature-item-blue{
+  padding: 0;
+  margin: 0;
+  width: 487px;
+  min-height: 300px;
+  background-color: #81b3d2;
+}
+
+.feature-item-gray{
+  padding: 0;
+  margin: 0;
+  min-height: 300px;
+  background-color: #eeeeee;
+}
+
+.feature-item-white{
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.wrapper3{
+  padding: 0;
+  margin: 0;
+  width: 100%
+  background-color: #ffffff;
 }
 
 .search-form {
@@ -270,28 +312,187 @@ img.main-intro {
   align-items: center;
 }
 
+.filter{
+  background-image: url("../img/filters.jpg");
+  min-height: 216px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.filter-range {
+  width: 330px;
+  margin: 50px auto; /* для демо */
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+.catalog{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.catalog-list{
+
+}
+
+.catalog-item{
+  list-style: none;
+}
+
 .main-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 120px;
+  min-height: 120px;
+
 }
 
 .footer-hashtag {
   margin: 0;
-  min-height: 25px;
-  min-width: 120px;
+  min-height: 55px;
+  width: 165px;
 }
 
 .footer-social {
-  margin: 0;
   min-height: 55px;
-  min-width: 155px;
+  min-width: 165px;
+}
+
+.social-button{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-copyright {
   margin: 0;
-  min-height: 50px;
+  min-height: 55px;
   min-width: 200px;
 }
 
