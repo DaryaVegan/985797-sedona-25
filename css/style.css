@@ -380,6 +380,7 @@ a {
 }
 
 .ordering {
+  display: none;
   position: absolute;
 
 	left: 25.2%;
@@ -390,6 +391,10 @@ a {
 	font-weight: bold;
 
 	background: rgb(255, 255, 255);
+}
+
+.ordering-show {
+	display: block;
 }
 
 .check-block {
